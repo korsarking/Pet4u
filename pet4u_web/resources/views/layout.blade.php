@@ -6,6 +6,7 @@
     <title>Document</title>
 
     @vite('resources/css/app.css')
+    @livewireStyles
 </head>
 <body>
     <header>
@@ -28,5 +29,6 @@
     <main>
         @yield("main")
     </main>
+    @livewireScripts
 </body>
 </html>
