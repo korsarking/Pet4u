@@ -9,26 +9,12 @@
     @livewireStyles
 </head>
 <body>
-    <header>
-        <h1 class='text-3xl'>Pet4u</h1>
-
-        <nav>
-            <ul>
-                <li>
-                    <a class='text-2xl italic' href="{{ route('home') }}">Home</a>
-                </li>
-                <li>
-                    <a class='text-2xl italic' href="{{ route('about') }}">About</a>
-                </li>
-                <li>
-                    <a class='text-2xl italic' href="{{ route('contacts') }}">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    @livewire('header')
+    @livewire('nav')
     <main>
         @yield("main")
     </main>
+    @livewire('footer')
     @livewireScripts
 </body>
 </html>
