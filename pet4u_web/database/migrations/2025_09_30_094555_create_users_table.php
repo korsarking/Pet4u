@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('username', 50)->unique(); 
             $table->string('organization_name', 100)->nullable();
             $table->string('email', 100)->unique();
-            $table->string('password_hash', 255);
+            $table->string('password', 255);
             $table->timestamps();
             $table->string('avatar_url', 255)->nullable();
             $table->text('bio')->nullable();
